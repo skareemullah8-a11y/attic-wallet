@@ -1,7 +1,7 @@
-// Attic Wallet service worker (851c235eeaaa). Only the site's own files are cached; wallet data never passes through here.
-const CACHE = 'attic-851c235eeaaa';
+// Attic Wallet service worker (0ebc24c3d46f). Only the site's own files are cached; wallet data never passes through here.
+const CACHE = 'attic-0ebc24c3d46f';
 const BASE = "/attic-wallet/";
-const CORE = ["/attic-wallet/","/attic-wallet/app.851c235eeaaa.js","/attic-wallet/manifest.webmanifest","/attic-wallet/favicon.png","/attic-wallet/icon-180.png","/attic-wallet/icon-192.png","/attic-wallet/icon-512.png"];
+const CORE = ["/attic-wallet/","/attic-wallet/app.0ebc24c3d46f.js","/attic-wallet/manifest.webmanifest","/attic-wallet/favicon.png","/attic-wallet/icon-180.png","/attic-wallet/icon-192.png","/attic-wallet/icon-512.png"];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));
 });
